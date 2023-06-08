@@ -1,7 +1,7 @@
-const ImageCard = ()=>{
+const ImageCard = (props)=>{
     return(
         <div className="image">
-            <img src="../../public/imges/carimg.jpg" alt="car" />
+            <img src={props.image} alt="car" />
         </div>
     )
 }

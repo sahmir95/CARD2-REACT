@@ -1,13 +1,15 @@
 import ImageCard from "./ImageCard";
+import TitleCard from "./TitleCard";
 import DescCard from "./DescCard";
 import ButtonCard from "./ButtonCard";
 import "./card.css"
 
-const Card = ()=>{
+const Card = (props)=>{
     return(
         <div className="card-container">
-            <ImageCard/> 
-            <DescCard/>
+            <ImageCard image={props.image}/>
+            <TitleCard title={props.title}/> 
+            <DescCard desc={props.desc}/>
             <ButtonCard/>
         </div>
     )
